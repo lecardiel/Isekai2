@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IsekaiP2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container container">
+      <a href="#"><h2>Isekai</h2></a>
+      <ul class="nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#" class="active">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div class="container">
+      <div>
+        <h3>¡Bienvenido a ISEKAI!</h3>
+        <p>Tu lugar para encontrar las mejores figuras coleccionables de anime.</p>
+        <a href="#" class="btn" onclick="showForm()">Contacta Ahora</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="form-container" style="display: none;">
+    <div class="container">
+      <form action="/submit-form.php" method="post">
+        <h3>Completa el formulario para más información:</h3>
+        <input type="text" name="nombre" placeholder="Nombre" required><br><br>
+        <input type="email" name="email" placeholder="Correo electrónico" required><br><br>
+        <textarea name="mensaje" placeholder="Mensaje"></textarea><br><br>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="main-container">
+      <div>
+        <h4>Redes Sociales</h4>
+        <ul>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>TikTok</li>
+          <li>WhatsApp</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+        </ul>
+      </div>
+      <div>
+        <h4>Rating</h4>
+        <ul>
+        </ul>
+      </div>
+      <div>
+        <h4>Rating</h4>
+        <ul> 
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </footer>
+
+  <script>
+    function showForm() {
+      var formContainer = document.getElementById('form-container');
+      formContainer.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
